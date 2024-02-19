@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetal Monitoring System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+
+<body>
+    <header>
+        <h1>Fetal Monitoring System</h1>
+    </header>
+    <main>
+
+        <div class="container">
+            <form action="register" method="post" id="registrationForm">
+                <h1>Patient Registration</h1>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter 10-digit phone number"
+                    required>
+
+                <label for="lmpDate">Last Menstrual Period (LMP) Date:</label>
+                <input type="date" id="lmpDate" name="lmpDate" required>
+
+                <input type="submit" value="Register" id="submit">
+            </form>
+        </div>
+
+        <section id="scheduling">
+            <h2>Appointment Scheduling</h2>
+            <div class="container_appointment">
+                <form id="appointmentForm">
+                    <h1>Book an Appointment</h1>
+
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="doctor">Select Doctor:</label>
+                        <select id="doctor" name="doctor" required>
+                            <option value="drSmith">Dr. Smith</option>
+                            <option value="drJohnson">Dr. Johnson</option>
+                            <!-- Add more doctors as needed -->
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Select Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time">Select Time:</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Schedule Appointment">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="resources">
+            <h2>Educational Resources</h2>
+            <p>Fetal heart rate monitoring is the process of checking the condition of your fetus during labor and
+                delivery by monitoring your fetus's heart rate with special equipment. Fetal heart rate monitoring may
+                help detect changes in the normal heart rate pattern during labor. If certain changes are detected,
+                steps can be taken to help treat the underlying problem. Fetal heart rate monitoring also can help
+                prevent treatments that are not needed. A normal fetal heart rate can reassure both you and your
+                obstetrician–gynecologist (ob-gyn) or other health care professional that it is safe to continue labor
+                if no other problems are present. Your healthcare provider may do fetal heart monitoring during late
+                pregnancy and labor. The average fetal heart rate is between 110 and 160 beats per minute. It can vary
+                by 5 to 25 beats per minute. The fetal heart rate may change as your baby responds to conditions in your
+                uterus. An abnormal fetal heart rate may mean that your baby is not getting enough oxygen or that there
+                are other problems.</p>
+        </section>
+
+        <section id="mobileIntegration">
+            <h2>Mobile App Integration</h2>
+            <p>Integration with a mobile app for remote monitoring.</p>
+        </section>
+        <section id="monitoring" class="mother-baby-container">
+            <h2>Real-time Monitoring</h2>
+            <div id="monitoringData" class="mother-baby-container">
+                <img src="./images/mother.png" alt="Mother" class="mother">
+                <img src="./images/baby.png" alt="Baby" class="baby">
+                Monitoring data will be displayed here.
+            </div>
+            <button id="startMonitoring">Start Monitoring</button>
+            <button id="stopMonitoring">Stop Monitoring</button>
+        </section>
+
+        <img src="./images/su-5.png" alt="fetal image" id="fetalImage">
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Fetal Monitoring System</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

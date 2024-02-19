@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product Page</title>
+  </head>
+  <body>
+    <h1>Product Name</h1>
+    <img src="product-picture.jpg" alt="Product Picture">
+    <p>Description of the product.</p>
+    <h2>Reviews:</h2>
+    <ul>
+      <li>5 stars: Great product!</li>
+      <li>4 stars: Good product, but could be better.</li>
+      <li>3 stars: Average product.</li>
+    </ul>
+    <h3>Leave a Review:</h3>
+    <form action="/reviews" method="post">
+      <label for="rating">Rating:</label>
+      <select id="rating" name="rating">
+        <option value="1">1 star</option>
+        <option value="2">2 stars</option>
+        <option value="3">3 stars</option>
+        <option value="4">4 stars</option>
+        <option value="5">5 stars</option>
+      </select>
+      <br>
+      <label for="review">Review:</label>
+      <textarea id="review" name="review"></textarea>
+      <br>
+      <button type="submit">Submit Review</button>
+    </form>
+  </body>
+</html>

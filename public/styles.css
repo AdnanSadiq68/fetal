@@ -1,0 +1,105 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Health-related background color */
+    color: #333;
+}
+
+header {
+    background-color: #edf3f9; /* Deep Blue */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container,
+.container_appointment,
+section {
+    background-color: #ffffff; /* White container background */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    color: #1976D2; /* Deep Blue */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #1976D2; /* Deep Blue */
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #1565C0; /* Slightly darker shade on hover */
+}
+
+section {
+    background-color: #ffffff; /* White container background */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#fetalImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Mother-Baby Animation */
+.mother-baby-container {
+    position: relative;
+    overflow: hidden;
+    height: 150px; /* Adjusted height */
+    margin-bottom: 20px;
+}
+
+.mother, .baby {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    width: 50px; /* Adjusted width */
+    height: auto;
+}
+
+/* ... (rest of the styles) */
+
+footer {
+    background-color: #1976D2; /* Deep Blue */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
